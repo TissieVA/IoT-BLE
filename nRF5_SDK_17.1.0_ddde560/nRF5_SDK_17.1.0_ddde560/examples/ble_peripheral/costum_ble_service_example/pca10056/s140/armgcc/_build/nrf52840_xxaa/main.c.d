@@ -20,18 +20,7 @@ _build/nrf52840_xxaa/main.c.o: ../../../main.c \
  c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eabi\include\sys\lock.h \
  c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eabi\include\sys\cdefs.h \
  c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eabi\include\sys\string.h \
- ../../../ble_cus.h \
- ../../../../../../components/softdevice/s140/headers/ble.h \
- ../../../../../../components/softdevice/s140/headers/nrf_svc.h \
- ../../../../../../components/softdevice/s140/headers/nrf_error.h \
- ../../../../../../components/softdevice/s140/headers/ble_err.h \
- ../../../../../../components/softdevice/s140/headers/ble_gap.h \
- ../../../../../../components/softdevice/s140/headers/ble_hci.h \
- ../../../../../../components/softdevice/s140/headers/ble_ranges.h \
- ../../../../../../components/softdevice/s140/headers/ble_types.h \
- ../../../../../../components/softdevice/s140/headers/ble_l2cap.h \
- ../../../../../../components/softdevice/s140/headers/ble_gatt.h \
- ../../../../../../components/softdevice/s140/headers/ble_gattc.h \
+ ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../modules/nrfx/mdk/nrf.h \
  ../../../../../../modules/nrfx/mdk/nrf52840.h \
  ../../../../../../components/toolchain/cmsis/include/core_cm4.h \
@@ -44,17 +33,6 @@ _build/nrf52840_xxaa/main.c.o: ../../../main.c \
  ../../../../../../modules/nrfx/mdk/nrf51_to_nrf52840.h \
  ../../../../../../modules/nrfx/mdk/nrf52_to_nrf52840.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
- ../../../../../../components/softdevice/s140/headers/ble_gatts.h \
- ../../../../../../components/ble/common/ble_srv_common.h \
- ../../../../../../components/softdevice/s140/headers/ble_types.h \
- ../../../../../../components/libraries/util/app_util.h \
- ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
- ../../../../../../components/libraries/util/nordic_common.h \
- ../../../../../../components/softdevice/s140/headers/nrf52/nrf_mbr.h \
- ../../../../../../components/softdevice/s140/headers/nrf_svc.h \
- ../../../../../../components/softdevice/s140/headers/ble_gap.h \
- ../../../../../../components/softdevice/s140/headers/ble_gatt.h \
- ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/util/app_error.h \
  c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eabi\include\stdio.h \
  c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\lib\gcc\arm-none-eabi\9.2.1\include\stdarg.h \
@@ -64,8 +42,29 @@ _build/nrf52840_xxaa/main.c.o: ../../../main.c \
  c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eabi\include\sys\stdio.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/softdevice/s140/headers/nrf_error.h \
+ ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/util/app_error_weak.h \
+ ../../../../../../components/softdevice/s140/headers/ble.h \
+ ../../../../../../components/softdevice/s140/headers/nrf_svc.h \
+ ../../../../../../components/softdevice/s140/headers/nrf_error.h \
+ ../../../../../../components/softdevice/s140/headers/ble_err.h \
+ ../../../../../../components/softdevice/s140/headers/ble_gap.h \
  ../../../../../../components/softdevice/s140/headers/ble_hci.h \
+ ../../../../../../components/softdevice/s140/headers/ble_ranges.h \
+ ../../../../../../components/softdevice/s140/headers/ble_types.h \
+ ../../../../../../components/softdevice/s140/headers/ble_l2cap.h \
+ ../../../../../../components/softdevice/s140/headers/ble_gatt.h \
+ ../../../../../../components/softdevice/s140/headers/ble_gattc.h \
+ ../../../../../../components/softdevice/s140/headers/ble_gatts.h \
+ ../../../../../../components/softdevice/s140/headers/ble_hci.h \
+ ../../../../../../components/ble/common/ble_srv_common.h \
+ ../../../../../../components/softdevice/s140/headers/ble_types.h \
+ ../../../../../../components/libraries/util/app_util.h \
+ ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
+ ../../../../../../components/softdevice/s140/headers/nrf52/nrf_mbr.h \
+ ../../../../../../components/softdevice/s140/headers/nrf_svc.h \
+ ../../../../../../components/softdevice/s140/headers/ble_gap.h \
+ ../../../../../../components/softdevice/s140/headers/ble_gatt.h \
  ../../../../../../components/ble/common/ble_advdata.h \
  ../../../../../../components/libraries/util/sdk_common.h \
  ../config/sdk_config.h \
@@ -100,8 +99,6 @@ _build/nrf52840_xxaa/main.c.o: ../../../main.c \
  ../../../../../../components/ble/common/ble_gatt_db.h \
  ../../../../../../components/ble/peer_manager/peer_database.h \
  ../../../../../../components/ble/peer_manager/peer_manager_internal.h \
- ../../../../../../components/ble/peer_manager/peer_manager_handler.h \
- ../../../../../../components/ble/peer_manager/peer_manager.h \
  ../../../../../../components/libraries/bsp/bsp_btn_ble.h \
  ../../../../../../components/libraries/bsp/bsp.h \
  ../../../../../../components/boards/boards.h \
@@ -140,7 +137,8 @@ _build/nrf52840_xxaa/main.c.o: ../../../main.c \
  c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eabi\include\stdlib.h \
  c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eabi\include\machine\stdlib.h \
  ../../../../../../components/libraries/balloc/nrf_balloc.h \
- ../../../../../../components/libraries/log/nrf_log_default_backends.h
+ ../../../../../../components/libraries/log/nrf_log_default_backends.h \
+ ../../../ble_cus.h
 
 c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\lib\gcc\arm-none-eabi\9.2.1\include\stdbool.h:
 
@@ -184,29 +182,7 @@ c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eab
 
 c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eabi\include\sys\string.h:
 
-../../../ble_cus.h:
-
-../../../../../../components/softdevice/s140/headers/ble.h:
-
-../../../../../../components/softdevice/s140/headers/nrf_svc.h:
-
-../../../../../../components/softdevice/s140/headers/nrf_error.h:
-
-../../../../../../components/softdevice/s140/headers/ble_err.h:
-
-../../../../../../components/softdevice/s140/headers/ble_gap.h:
-
-../../../../../../components/softdevice/s140/headers/ble_hci.h:
-
-../../../../../../components/softdevice/s140/headers/ble_ranges.h:
-
-../../../../../../components/softdevice/s140/headers/ble_types.h:
-
-../../../../../../components/softdevice/s140/headers/ble_l2cap.h:
-
-../../../../../../components/softdevice/s140/headers/ble_gatt.h:
-
-../../../../../../components/softdevice/s140/headers/ble_gattc.h:
+../../../../../../components/libraries/util/nordic_common.h:
 
 ../../../../../../modules/nrfx/mdk/nrf.h:
 
@@ -232,28 +208,6 @@ c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eab
 
 ../../../../../../modules/nrfx/mdk/compiler_abstraction.h:
 
-../../../../../../components/softdevice/s140/headers/ble_gatts.h:
-
-../../../../../../components/ble/common/ble_srv_common.h:
-
-../../../../../../components/softdevice/s140/headers/ble_types.h:
-
-../../../../../../components/libraries/util/app_util.h:
-
-../../../../../../modules/nrfx/mdk/compiler_abstraction.h:
-
-../../../../../../components/libraries/util/nordic_common.h:
-
-../../../../../../components/softdevice/s140/headers/nrf52/nrf_mbr.h:
-
-../../../../../../components/softdevice/s140/headers/nrf_svc.h:
-
-../../../../../../components/softdevice/s140/headers/ble_gap.h:
-
-../../../../../../components/softdevice/s140/headers/ble_gatt.h:
-
-../../../../../../components/libraries/util/nordic_common.h:
-
 ../../../../../../components/libraries/util/app_error.h:
 
 c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eabi\include\stdio.h:
@@ -272,9 +226,51 @@ c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eab
 
 ../../../../../../components/softdevice/s140/headers/nrf_error.h:
 
+../../../../../../components/libraries/util/nordic_common.h:
+
 ../../../../../../components/libraries/util/app_error_weak.h:
 
+../../../../../../components/softdevice/s140/headers/ble.h:
+
+../../../../../../components/softdevice/s140/headers/nrf_svc.h:
+
+../../../../../../components/softdevice/s140/headers/nrf_error.h:
+
+../../../../../../components/softdevice/s140/headers/ble_err.h:
+
+../../../../../../components/softdevice/s140/headers/ble_gap.h:
+
 ../../../../../../components/softdevice/s140/headers/ble_hci.h:
+
+../../../../../../components/softdevice/s140/headers/ble_ranges.h:
+
+../../../../../../components/softdevice/s140/headers/ble_types.h:
+
+../../../../../../components/softdevice/s140/headers/ble_l2cap.h:
+
+../../../../../../components/softdevice/s140/headers/ble_gatt.h:
+
+../../../../../../components/softdevice/s140/headers/ble_gattc.h:
+
+../../../../../../components/softdevice/s140/headers/ble_gatts.h:
+
+../../../../../../components/softdevice/s140/headers/ble_hci.h:
+
+../../../../../../components/ble/common/ble_srv_common.h:
+
+../../../../../../components/softdevice/s140/headers/ble_types.h:
+
+../../../../../../components/libraries/util/app_util.h:
+
+../../../../../../modules/nrfx/mdk/compiler_abstraction.h:
+
+../../../../../../components/softdevice/s140/headers/nrf52/nrf_mbr.h:
+
+../../../../../../components/softdevice/s140/headers/nrf_svc.h:
+
+../../../../../../components/softdevice/s140/headers/ble_gap.h:
+
+../../../../../../components/softdevice/s140/headers/ble_gatt.h:
 
 ../../../../../../components/ble/common/ble_advdata.h:
 
@@ -343,10 +339,6 @@ c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eab
 ../../../../../../components/ble/peer_manager/peer_database.h:
 
 ../../../../../../components/ble/peer_manager/peer_manager_internal.h:
-
-../../../../../../components/ble/peer_manager/peer_manager_handler.h:
-
-../../../../../../components/ble/peer_manager/peer_manager.h:
 
 ../../../../../../components/libraries/bsp/bsp_btn_ble.h:
 
@@ -425,3 +417,5 @@ c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eab
 ../../../../../../components/libraries/balloc/nrf_balloc.h:
 
 ../../../../../../components/libraries/log/nrf_log_default_backends.h:
+
+../../../ble_cus.h:

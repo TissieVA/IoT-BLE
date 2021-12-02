@@ -44,9 +44,7 @@ _build/nrf52840_xxaa/ble_cus.c.o: ../../../ble_cus.c \
  ../../../../../../components/softdevice/s140/headers/nrf_svc.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- ../../../../../../components/ble/common/ble_srv_common.h \
- ../../../../../../components/softdevice/s140/headers/ble_types.h \
- ../../../../../../components/libraries/util/app_util.h \
+ ../../../ble_cus.h \
  ../../../../../../components/softdevice/s140/headers/ble.h \
  ../../../../../../components/softdevice/s140/headers/nrf_svc.h \
  ../../../../../../components/softdevice/s140/headers/nrf_error.h \
@@ -59,9 +57,12 @@ _build/nrf52840_xxaa/ble_cus.c.o: ../../../ble_cus.c \
  ../../../../../../components/softdevice/s140/headers/ble_gatt.h \
  ../../../../../../components/softdevice/s140/headers/ble_gattc.h \
  ../../../../../../components/softdevice/s140/headers/ble_gatts.h \
+ ../../../../../../components/ble/common/ble_srv_common.h \
+ ../../../../../../components/softdevice/s140/headers/ble_types.h \
+ ../../../../../../components/libraries/util/app_util.h \
  ../../../../../../components/softdevice/s140/headers/ble_gap.h \
  ../../../../../../components/softdevice/s140/headers/ble_gatt.h \
- ../../../ble_cus.h ../../../../../../modules/nrfx/hal/nrf_gpio.h \
+ ../../../../../../modules/nrfx/hal/nrf_gpio.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
@@ -192,11 +193,7 @@ c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eab
 
 ../../../../../../components/libraries/util/nrf_assert.h:
 
-../../../../../../components/ble/common/ble_srv_common.h:
-
-../../../../../../components/softdevice/s140/headers/ble_types.h:
-
-../../../../../../components/libraries/util/app_util.h:
+../../../ble_cus.h:
 
 ../../../../../../components/softdevice/s140/headers/ble.h:
 
@@ -222,11 +219,15 @@ c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eab
 
 ../../../../../../components/softdevice/s140/headers/ble_gatts.h:
 
+../../../../../../components/ble/common/ble_srv_common.h:
+
+../../../../../../components/softdevice/s140/headers/ble_types.h:
+
+../../../../../../components/libraries/util/app_util.h:
+
 ../../../../../../components/softdevice/s140/headers/ble_gap.h:
 
 ../../../../../../components/softdevice/s140/headers/ble_gatt.h:
-
-../../../ble_cus.h:
 
 ../../../../../../modules/nrfx/hal/nrf_gpio.h:
 

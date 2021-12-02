@@ -1,14 +1,120 @@
 #include "sdk_common.h"
-#include "ble_srv_common.h"
 #include "ble_cus.h"
 #include <string.h>
+#include "ble_srv_common.h"
 #include "nrf_gpio.h"
 #include "boards.h"
 #include "nrf_log.h"
 
+/**@brief Function for handling the Connect event.
+ *
+ * @param[in]   p_cus       Custom Service structure.
+ * @param[in]   p_ble_evt   Event received from the BLE stack.
+ */
+static void on_connect(ble_cus_t * p_cus, ble_evt_t const * p_ble_evt)
+{
+    p_cus->conn_handle = p_ble_evt->evt.gap_evt.conn_handle;
+
+    ble_cus_evt_t evt;
+
+    evt.evt_type = BLE_CUS_EVT_CONNECTED;
+
+    p_cus->evt_handler(p_cus, &evt);
+}
+
+/**@brief Function for handling the Disconnect event.
+ *
+ * @param[in]   p_cus       Custom Service structure.
+ * @param[in]   p_ble_evt   Event received from the BLE stack.
+ */
+static void on_disconnect(ble_cus_t * p_cus, ble_evt_t const * p_ble_evt)
+{
+    UNUSED_PARAMETER(p_ble_evt);
+    p_cus->conn_handle = BLE_CONN_HANDLE_INVALID;
+    
+    ble_cus_evt_t evt;
+
+    evt.evt_type = BLE_CUS_EVT_DISCONNECTED;
+
+    p_cus->evt_handler(p_cus, &evt);
+}
+
+/**@brief Function for handling the Write event.
+ *
+ * @param[in]   p_cus       Custom Service structure.
+ * @param[in]   p_ble_evt   Event received from the BLE stack.
+ */
+static void on_write(ble_cus_t * p_cus, ble_evt_t const * p_ble_evt)
+{
+    ble_gatts_evt_write_t const * p_evt_write = &p_ble_evt->evt.gatts_evt.params.write;
+    
+    // Custom Value Characteristic Written to.
+    if (p_evt_write->handle == p_cus->custom_value_handles.value_handle)
+    {
+        if(*p_evt_write->data == 0x01)
+        {
+            nrf_gpio_pin_toggle(LED_4);                 // !VERY IMPORTANT IF WE WANT TO DO THINGS BASED ON WHATS WRITTEN !!!
+        }
+    }
+
+    // Check if the Custom value CCCD is written to and that the value is the appropriate length, i.e 2 bytes.
+    // if ((p_evt_write->handle == p_cus->custom_value_handles.cccd_handle)
+    //     && (p_evt_write->len == 2)
+    //    )
+    // {
+    //     // CCCD written, call application event handler
+    //     if (p_cus->evt_handler != NULL)
+    //     {
+    //         ble_cus_evt_t evt;
+
+    //         if (ble_srv_is_notification_enabled(p_evt_write->data))
+    //         {
+    //             evt.evt_type = BLE_CUS_EVT_NOTIFICATION_ENABLED;
+    //         }
+    //         else
+    //         {
+    //             evt.evt_type = BLE_CUS_EVT_NOTIFICATION_DISABLED;
+    //         }
+    //         // Call the application event handler.
+    //         p_cus->evt_handler(p_cus, &evt);
+    //     }
+    // }
+
+}
+
+void ble_cus_on_ble_evt( ble_evt_t const * p_ble_evt, void * p_context)
+{
+    ble_cus_t * p_cus = (ble_cus_t *) p_context;
+    
+    NRF_LOG_INFO("BLE event received. Event type = %d\r\n", p_ble_evt->header.evt_id); 
+    if (p_cus == NULL || p_ble_evt == NULL)
+    {
+        return;
+    }
+    
+    switch (p_ble_evt->header.evt_id)
+    {
+        case BLE_GAP_EVT_CONNECTED:
+            on_connect(p_cus, p_ble_evt);
+            break;
+
+        case BLE_GAP_EVT_DISCONNECTED:
+            on_disconnect(p_cus, p_ble_evt);
+            break;
+
+        case BLE_GATTS_EVT_WRITE:
+            on_write(p_cus, p_ble_evt);
+            break;
+
+        default:
+            // No implementation needed.
+            break;
+    }
+}
+
 /**@brief Function for adding the Custom Value characteristic.
  *
- * @param[in]   p_cus        Custom Service structure.
+ * @param[in]   p_cus        Battery Service structure.
  * @param[in]   p_cus_init   Information needed to initialize the service.
  *
  * @return      NRF_SUCCESS on success, otherwise an error code.
@@ -16,15 +122,25 @@
 static uint32_t custom_value_char_add(ble_cus_t * p_cus, const ble_cus_init_t * p_cus_init)
 {
     uint32_t            err_code;
-    ble_gatts_char_md_t char_md;        // sets the properties that will be displayed to the central during service discovery.
+    ble_gatts_char_md_t char_md;
     ble_gatts_attr_md_t cccd_md;
-    ble_gatts_attr_t    attr_char_value; //sets the UUID, points to the attribute metadata and sets the size of the characteristic
+    ble_gatts_attr_t    attr_char_value;
     ble_uuid_t          ble_uuid;
-    ble_gatts_attr_md_t attr_md;        // sets the properties( i.e. accessability of the attribute).
+    ble_gatts_attr_md_t attr_md;
+
+    // // Add Custom Value characteristic
+    // memset(&cccd_md, 0, sizeof(cccd_md));
+
+    // //  Read  operation on cccd should be possible without authentication.
+    // BLE_GAP_CONN_SEC_MODE_SET_OPEN(&cccd_md.read_perm);
+    // BLE_GAP_CONN_SEC_MODE_SET_OPEN(&cccd_md.write_perm);
+    
+    // cccd_md.write_perm = p_cus_init->custom_value_char_attr_md.cccd_write_perm;
+    // cccd_md.vloc       = BLE_GATTS_VLOC_STACK;
 
     memset(&char_md, 0, sizeof(char_md));
 
-    char_md.char_props.read   = 1;   //choosing the properties for the characteristics
+    char_md.char_props.read   = 1;
     char_md.char_props.write  = 1;
     char_md.char_props.notify = 0; 
     char_md.p_char_user_desc  = NULL;
@@ -32,20 +148,19 @@ static uint32_t custom_value_char_add(ble_cus_t * p_cus, const ble_cus_init_t * 
     char_md.p_user_desc_md    = NULL;
     char_md.p_cccd_md         = NULL; 
     char_md.p_sccd_md         = NULL;
+		
+    ble_uuid.type = p_cus->uuid_type;
+    ble_uuid.uuid = CUSTOM_VALUE_CHAR_UUID;
 
     memset(&attr_md, 0, sizeof(attr_md));
 
     attr_md.read_perm  = p_cus_init->custom_value_char_attr_md.read_perm;
     attr_md.write_perm = p_cus_init->custom_value_char_attr_md.write_perm;
-    attr_md.vloc       = BLE_GATTS_VLOC_STACK;  //Characteristic stored in the SoftDevice RAM section and not in the Application RAM section.
+    attr_md.vloc       = BLE_GATTS_VLOC_STACK;
     attr_md.rd_auth    = 0;
     attr_md.wr_auth    = 0;
     attr_md.vlen       = 0;
 
-    ble_uuid.type = p_cus->uuid_type;
-    ble_uuid.uuid = CUSTOM_VALUE_CHAR_UUID;
-    
-    //populate the attr_char_value struct, which sets the UUID, points to the attribute metadata and sets the size of the characteristic, in our case a single byte(uint8_t).
     memset(&attr_char_value, 0, sizeof(attr_char_value));
 
     attr_char_value.p_uuid    = &ble_uuid;
@@ -54,7 +169,6 @@ static uint32_t custom_value_char_add(ble_cus_t * p_cus, const ble_cus_init_t * 
     attr_char_value.init_offs = 0;
     attr_char_value.max_len   = sizeof(uint8_t);
 
-    //we can add our characteristic by calling sd_ble_gatts_characteristic_add() with the structs as arguments.
     err_code = sd_ble_gatts_characteristic_add(p_cus->service_handle, &char_md,
                                                &attr_char_value,
                                                &p_cus->custom_value_handles);
@@ -77,6 +191,7 @@ uint32_t ble_cus_init(ble_cus_t * p_cus, const ble_cus_init_t * p_cus_init)
     ble_uuid_t ble_uuid;
 
     // Initialize service structure
+    p_cus->evt_handler               = p_cus_init->evt_handler;
     p_cus->conn_handle               = BLE_CONN_HANDLE_INVALID;
 
     // Add Custom Service UUID
@@ -93,59 +208,7 @@ uint32_t ble_cus_init(ble_cus_t * p_cus, const ble_cus_init_t * p_cus_init)
     {
         return err_code;
     }
-    return err_code;
 
     // Add Custom Value characteristic
     return custom_value_char_add(p_cus, p_cus_init);
 }
-
-
-// void ble_cus_on_ble_evt( ble_evt_t const * p_ble_evt, void * p_context)
-// {
-//     ble_cus_t * p_cus = (ble_cus_t *) p_context;
-    
-//     if (p_cus == NULL || p_ble_evt == NULL) // its considered good practice to check that none of the pointers that we provided as arguments are NULL.
-//     {
-//         return;
-//     }
-    
-//     switch (p_ble_evt->header.evt_id)   // add a switch-case to check which event that has been propagated to the application by the SoftDevice.
-//     {
-//         case BLE_GAP_EVT_CONNECTED:
-//             on_connect(p_cus, p_ble_evt);
-//             break;
-
-//         case BLE_GAP_EVT_DISCONNECTED:
-//             on_disconnect(p_cus, p_ble_evt);
-//             break;
-
-//         default:
-//             // No implementation needed.
-//             break;
-//     }
-// }
-
-// /**@brief Function for handling the Connect event.
-//  *
-//  * @param[in]   p_cus       Custom Service structure.
-//  * @param[in]   p_ble_evt   Event received from the BLE stack.
-//  */
-//  //when we get the Connect event assign the connection handle in the Custom Service structure to the connection handle that is passed with the event.
-// static void on_connect(ble_cus_t * p_cus, ble_evt_t const * p_ble_evt)
-// {
-//     p_cus->conn_handle = p_ble_evt->evt.gap_evt.conn_handle;   
-// }
-
-// /**@brief Function for handling the Disconnect event.
-//  *
-//  * @param[in]   p_cus       Custom Service structure.
-//  * @param[in]   p_ble_evt   Event received from the BLE stack.
-//  */
- 
-//  //when we get the Disconnect event, the only thing we need to do is invalidate the connection handle in the Custom Service structure since the connection is now dead.
-// static void on_disconnect(ble_cus_t * p_cus, ble_evt_t const * p_ble_evt)
-// {
-//     UNUSED_PARAMETER(p_ble_evt);
-//     p_cus->conn_handle = BLE_CONN_HANDLE_INVALID;
-// }
-
