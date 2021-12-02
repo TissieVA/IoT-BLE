@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "ble_srv_common.h": "c",
+        "boards.h": "c"
+    }
+}
