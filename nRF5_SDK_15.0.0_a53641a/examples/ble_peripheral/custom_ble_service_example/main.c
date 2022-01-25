@@ -81,6 +81,7 @@
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
 #include "ble_cus.h"
+#include "app_uart.h"
 
 #define DEVICE_NAME                     "Nordic_Template"                       /**< Name of device. Will be included in the advertising data. */
 #define MANUFACTURER_NAME               "NordicSemiconductor"                   /**< Manufacturer. Will be passed to Device Information Service. */
@@ -594,11 +595,21 @@ static void ble_evt_handler(ble_evt_t const * p_ble_evt, void * p_context)
     {
         case BLE_GAP_EVT_DISCONNECTED:
             NRF_LOG_INFO("Disconnected.");
-            // LED indication will be changed when advertising starts.
+            // LED indication will be changed when advertising starts
             break;
 
         case BLE_GAP_EVT_CONNECTED:
-            NRF_LOG_INFO("Connected.");
+
+            err_code = app_uart_put('1');
+            APP_ERROR_CHECK(err_code);
+            
+            NRF_LOG_INFO("Device:[%d] connected", 0);
+            char buffer1[50];
+            sprintf(buffer1, "Device:[%d] connected", 0);
+
+            // for(int loop = 0; loop < 50; loop++){
+            //     app_uart_put(buffer1[loop]);
+            // }
             err_code = bsp_indication_set(BSP_INDICATE_CONNECTED);
             APP_ERROR_CHECK(err_code);
             m_conn_handle = p_ble_evt->evt.gap_evt.conn_handle;

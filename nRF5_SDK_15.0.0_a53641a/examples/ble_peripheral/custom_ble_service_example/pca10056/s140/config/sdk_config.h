@@ -6454,6 +6454,21 @@
 
 // </e>
 
+// <e> APP_UART_ENABLED - app_uart - UART driver
+//==========================================================
+#ifndef APP_UART_ENABLED
+#define APP_UART_ENABLED 1
+#endif
+// <o> APP_UART_DRIVER_INSTANCE  - UART instance used
+ 
+// <0=> 0 
+
+#ifndef APP_UART_DRIVER_INSTANCE
+#define APP_UART_DRIVER_INSTANCE 0
+#endif
+
+// </e>
+
 // <e> HCI_TRANSPORT_ENABLED - hci_transport - HCI transport
 //==========================================================
 #ifndef HCI_TRANSPORT_ENABLED

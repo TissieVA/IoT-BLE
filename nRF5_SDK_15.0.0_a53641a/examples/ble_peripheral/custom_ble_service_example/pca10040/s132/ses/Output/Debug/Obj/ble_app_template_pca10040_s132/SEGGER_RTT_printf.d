@@ -1,7 +1,7 @@
 Output/Debug/Obj/ble_app_template_pca10040_s132/SEGGER_RTT_printf.o: \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\external\segger_rtt\SEGGER_RTT_printf.c \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\external\segger_rtt\SEGGER_RTT.h \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\external\segger_rtt\SEGGER_RTT_Conf.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\external\segger_rtt\SEGGER_RTT_printf.c \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\external\segger_rtt\SEGGER_RTT.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\external\segger_rtt\SEGGER_RTT_Conf.h \
  ../../../../../../components/libraries/util/nordic_common.h \
  ../../../../../../components/libraries/util/app_util_platform.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdint.h \

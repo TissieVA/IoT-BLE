@@ -1,6 +1,6 @@
 Output/Debug/Obj/ble_app_template_pca10040_s132/nrf_drv_uart.o: \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\integration\nrfx\legacy\nrf_drv_uart.c \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\integration\nrfx\legacy\nrf_drv_uart.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\integration\nrfx\legacy\nrf_drv_uart.c \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\integration\nrfx\legacy\nrf_drv_uart.h \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \

@@ -1,5 +1,5 @@
 Output/Debug/Obj/ble_app_template_pca10040_s132/main.o: \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\examples\ble_peripheral\custom_ble_service_example\main.c \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\examples\ble_peripheral\custom_ble_service_example\main.c \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdbool.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/string.h \
@@ -112,4 +112,5 @@ Output/Debug/Obj/ble_app_template_pca10040_s132/main.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdlib.h \
  ../../../../../../components/libraries/balloc/nrf_balloc.h \
  ../../../../../../components/libraries/experimental_log/nrf_log_default_backends.h \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\examples\ble_peripheral\custom_ble_service_example\ble_cus.h
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\examples\ble_peripheral\custom_ble_service_example\ble_cus.h \
+ ../../../../../../components/libraries/uart/app_uart.h

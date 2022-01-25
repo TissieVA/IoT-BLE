@@ -1,5 +1,5 @@
 Output/Debug/Obj/ble_app_template_pca10040_s132/crc16.o: \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\crc16\crc16.c \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\crc16\crc16.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdbool.h \
@@ -27,5 +27,5 @@ Output/Debug/Obj/ble_app_template_pca10040_s132/crc16.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\crc16\crc16.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\crc16\crc16.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdlib.h

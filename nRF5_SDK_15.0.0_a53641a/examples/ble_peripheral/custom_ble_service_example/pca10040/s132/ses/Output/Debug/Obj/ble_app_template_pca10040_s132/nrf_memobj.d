@@ -1,6 +1,6 @@
 Output/Debug/Obj/ble_app_template_pca10040_s132/nrf_memobj.o: \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\experimental_memobj\nrf_memobj.c \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\experimental_memobj\nrf_memobj.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\experimental_memobj\nrf_memobj.c \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\experimental_memobj\nrf_memobj.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdlib.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/__crossworks.h \

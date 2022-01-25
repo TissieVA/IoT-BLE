@@ -133,7 +133,8 @@ _build/nrf52832_xxaa/main.c.o: ../../../main.c \
  c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eabi\include\machine\stdlib.h \
  ../../../../../../components/libraries/balloc/nrf_balloc.h \
  ../../../../../../components/libraries/experimental_log/nrf_log_default_backends.h \
- ../../../ble_cus.h
+ ../../../ble_cus.h \
+ ../../../../../../components/libraries/uart/app_uart.h
 
 c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\lib\gcc\arm-none-eabi\9.2.1\include\stdbool.h:
 
@@ -404,3 +405,5 @@ c:\program\ files\ (x86)\gnu\ tools\ arm\ embedded\9\ 2019-q4-major\arm-none-eab
 ../../../../../../components/libraries/experimental_log/nrf_log_default_backends.h:
 
 ../../../ble_cus.h:
+
+../../../../../../components/libraries/uart/app_uart.h:

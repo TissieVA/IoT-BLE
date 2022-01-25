@@ -1,6 +1,6 @@
 Output/Debug/Obj/ble_app_template_pca10040_s132/ble_advdata.o: \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\ble\common\ble_advdata.c \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\ble\common\ble_advdata.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\ble\common\ble_advdata.c \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\ble\common\ble_advdata.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdbool.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/string.h \
@@ -41,7 +41,7 @@ Output/Debug/Obj/ble_app_template_pca10040_s132/ble_advdata.o: \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
  ../../../../../../components/softdevice/s132/headers/ble_gap.h \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\ble\common\ble_srv_common.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\ble\common\ble_srv_common.h \
  ../../../../../../components/softdevice/s132/headers/ble_types.h \
  ../../../../../../components/libraries/util/app_util.h \
  ../../../../../../components/softdevice/s132/headers/ble_gatt.h

@@ -1,5 +1,5 @@
 Output/Debug/Obj/ble_app_template_pca10040_s132/nrf_sdh_soc.o: \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\softdevice\common\nrf_sdh_soc.c \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\softdevice\common\nrf_sdh_soc.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdbool.h \
@@ -27,7 +27,7 @@ Output/Debug/Obj/ble_app_template_pca10040_s132/nrf_sdh_soc.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\softdevice\common\nrf_sdh_soc.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\softdevice\common\nrf_sdh_soc.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section_iter.h \
  ../../../../../../components/libraries/experimental_section_vars/nrf_section.h \
  ../../../../../../components/libraries/util/nordic_common.h \
@@ -37,7 +37,7 @@ Output/Debug/Obj/ble_app_template_pca10040_s132/nrf_sdh_soc.o: \
  ../../../../../../components/softdevice/s132/headers/nrf_svc.h \
  ../../../../../../components/softdevice/s132/headers/nrf_error.h \
  ../../../../../../components/softdevice/s132/headers/nrf_error_soc.h \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\softdevice\common\nrf_sdh.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\softdevice\common\nrf_sdh.h \
  ../../../../../../components/libraries/util/sdk_errors.h \
  ../../../../../../components/libraries/util/app_error.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdio.h \

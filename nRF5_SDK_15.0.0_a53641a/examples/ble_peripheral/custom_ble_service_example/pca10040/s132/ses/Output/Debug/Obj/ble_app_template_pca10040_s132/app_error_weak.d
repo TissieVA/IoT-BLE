@@ -1,6 +1,6 @@
 Output/Debug/Obj/ble_app_template_pca10040_s132/app_error_weak.o: \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\util\app_error_weak.c \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\util\app_error.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\util\app_error_weak.c \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\util\app_error.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdio.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/__crossworks.h \
@@ -17,10 +17,10 @@ Output/Debug/Obj/ble_app_template_pca10040_s132/app_error_weak.o: \
  ../../../../../../modules/nrfx/mdk/nrf51_to_nrf52.h \
  ../../../../../../modules/nrfx/mdk/nrf52_name_change.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\util\sdk_errors.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\util\sdk_errors.h \
  ../../../../../../components/softdevice/s132/headers/nrf_error.h \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\util\nordic_common.h \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\util\app_error_weak.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\util\nordic_common.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\util\app_error_weak.h \
  ../../../../../../components/libraries/experimental_log/nrf_log.h \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/string.h \

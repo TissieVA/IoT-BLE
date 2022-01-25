@@ -1,5 +1,5 @@
 Output/Debug/Obj/ble_app_template_pca10040_s132/nrfx_uart.o: \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\modules\nrfx\drivers\src\nrfx_uart.c \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\modules\nrfx\drivers\src\nrfx_uart.c \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
@@ -49,7 +49,7 @@ Output/Debug/Obj/ble_app_template_pca10040_s132/nrfx_uart.o: \
  ../../../../../../modules/nrfx/drivers/nrfx_errors.h \
  ../../../../../../modules/nrfx/drivers/include/nrfx_uart.h \
  ../../../../../../modules/nrfx/hal/nrf_uart.h \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\modules\nrfx\drivers\src\prs/nrfx_prs.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\modules\nrfx\drivers\src\prs/nrfx_prs.h \
  ../../../../../../modules/nrfx/hal/nrf_gpio.h \
  ../../../../../../integration/nrfx/nrfx_log.h \
  ../../../../../../components/libraries/experimental_log/nrf_log.h \

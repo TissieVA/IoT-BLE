@@ -1,6 +1,6 @@
 Output/Debug/Obj/ble_app_template_pca10040_s132/bsp_btn_ble.o: \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\bsp\bsp_btn_ble.c \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\bsp\bsp_btn_ble.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\bsp\bsp_btn_ble.c \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\bsp\bsp_btn_ble.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdint.h \
  ../../../../../../components/softdevice/s132/headers/ble.h \
  ../../../../../../components/softdevice/s132/headers/nrf_svc.h \
@@ -26,7 +26,7 @@ Output/Debug/Obj/ble_app_template_pca10040_s132/bsp_btn_ble.o: \
  ../../../../../../modules/nrfx/mdk/nrf52_name_change.h \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/softdevice/s132/headers/ble_gatts.h \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\bsp\bsp.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\bsp\bsp.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdbool.h \
  ../../../../../../components/boards/boards.h \
  ../../../../../../modules/nrfx/hal/nrf_gpio.h \

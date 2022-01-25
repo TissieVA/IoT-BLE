@@ -1,5 +1,5 @@
 Output/Debug/Obj/ble_app_template_pca10040_s132/app_timer.o: \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\timer\app_timer.c \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\timer\app_timer.c \
  ../../../../../../components/libraries/util/sdk_common.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdint.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdbool.h \
@@ -27,7 +27,7 @@ Output/Debug/Obj/ble_app_template_pca10040_s132/app_timer.o: \
  ../../../../../../modules/nrfx/mdk/compiler_abstraction.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\timer\app_timer.h \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\timer\app_timer.h \
  ../../../../../../components/libraries/util/app_error.h \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stdio.h \
  ../../../../../../components/libraries/util/app_error_weak.h \

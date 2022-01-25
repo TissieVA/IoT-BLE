@@ -1,5 +1,5 @@
 Output/Debug/Obj/ble_app_template_pca10040_s132/nrf_atflags.o: \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\atomic_flags\nrf_atflags.c \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\atomic_flags\nrf_atflags.c \
  ../../../../../../modules/nrfx/mdk/nrf.h \
  ../../../../../../modules/nrfx/mdk/nrf52.h \
  ../../../../../../components/toolchain/cmsis/include/core_cm4.h \
@@ -28,4 +28,4 @@ Output/Debug/Obj/ble_app_template_pca10040_s132/nrf_atflags.o: \
  C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.64/include/stddef.h \
  ../../../../../../components/libraries/util/sdk_macros.h \
  ../../../../../../components/libraries/util/nrf_assert.h \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\components\libraries\atomic_flags\nrf_atflags.h
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\components\libraries\atomic_flags\nrf_atflags.h

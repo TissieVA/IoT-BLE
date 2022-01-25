@@ -1,5 +1,5 @@
 Output/Debug/Obj/ble_app_template_pca10040_s132/nrfx_gpiote.o: \
- C:\Users\tijsv\Downloads\nRF5_SDK_15.0.0_a53641a\modules\nrfx\drivers\src\nrfx_gpiote.c \
+ C:\nRF5\nRF5_SDK_15.0.0_a53641a\modules\nrfx\drivers\src\nrfx_gpiote.c \
  ../../../../../../modules/nrfx/nrfx.h \
  ../../../../../../integration/nrfx/nrfx_config.h ../config/sdk_config.h \
  ../../../../../../modules/nrfx/drivers/nrfx_common.h \
