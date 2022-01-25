@@ -1,4 +1,4 @@
-PROJECT_NAME     := glass_blinky_uart_pca10040_s132
+PROJECT_NAME     := frost_detector_pca10040_s132
 TARGETS          := nrf52832_xxaa
 OUTPUT_DIRECTORY := _build
 
@@ -6,7 +6,7 @@ SDK_ROOT := ../../../../../..
 PROJ_DIR := ../../..
 
 $(OUTPUT_DIRECTORY)/nrf52832_xxaa.out: \
-  LINKER_SCRIPT  := glass_blinky_uart_gcc_nrf52.ld
+  LINKER_SCRIPT  := frost_detector_gcc_nrf52.ld
 
 # Source files common to all targets
 SRC_FILES += \
