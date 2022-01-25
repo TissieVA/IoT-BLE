@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jan 25 17:55:58 2022
+# Make data base, printed on Tue Jan 25 18:23:38 2022
 
 # Variables
 
@@ -229,7 +229,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 165 Stepping 2, GenuineIntel
 
 # Directories
 
-# . (key c:/nRF5/nRF5_SDK_17.1.0_ddde560, mtime 1639666717): 4 files, no impossibilities.
+# . (key c:/nRF5/nRF5_SDK_17.1.0_ddde560, mtime 1643130674): 4 files, no impossibilities.
 
 # 4 files, no impossibilities in 1 directories.
 
@@ -281,7 +281,8 @@ GNUmakefile:
 #  Failed to be updated.
 
 # files hash-table stats:
-# Load=7/1024=1%, Rehash=0, Collisions=0/16=0%
+# Load=7/1024=1%, Rehash=0, Collision 
+s=0/16=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -294,6 +295,6 @@ GNUmakefile:
 # strcache performance: lookups = 14 / hit rate = 21%
 # hash-table stats:
 # Load=11/8192=0%, Rehash=0, Collisions=0/14=0%
-# Finished Make data base on Tue Jan 25 17:55:58 2022
+# Finished Make data base on Tue Jan 25 18:23:38 2022
 
  
