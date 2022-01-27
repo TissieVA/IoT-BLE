@@ -1,4 +1,4 @@
-make.exe --dry-run --keep-going --print-directory
+make.exe --dry-run --always-make --keep-going --print-directory
 make: Entering directory 'c:/nRF5/nRF5_SDK_17.1.0_ddde560'
 make: Leaving directory 'c:/nRF5/nRF5_SDK_17.1.0_ddde560'
  
