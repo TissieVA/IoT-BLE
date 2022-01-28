@@ -1,3 +1,3 @@
 ﻿# IoT---BLE-module
 
-To see the full documentation see the Wiki tab of the repository. 
+All documentation can be found in the Wiki tab of this repository. 
